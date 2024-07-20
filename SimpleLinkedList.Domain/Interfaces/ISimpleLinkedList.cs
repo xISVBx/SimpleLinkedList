@@ -9,8 +9,14 @@ namespace SimpleLinkedList.Domain.Interfaces
 {
     public interface ISimpleLinkedList<T>
     {
-        public INode<T>? Head { get; set; }
-        public INode<T>? Tail { get; set; }
+        /// <summary>
+        /// The first node in the list
+        /// </summary>
+        public INode<T?>? Head { get; set; }
+        /// <summary>
+        /// The last node in the list
+        /// </summary>
+        public INode<T?>? Tail { get; set; }
         /// <summary>
         /// Adds a new element to the data structure.
         /// </summary>
